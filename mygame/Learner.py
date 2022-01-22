@@ -1,9 +1,9 @@
 from random import shuffle
 import numpy as np
 
-from mygame.Game import feature12, feature34, feature56, checkIfWon, checkWin
+from mygame.Game import feature56, checkIfWon
 from mygame.Player import vCap, feature, playMove
-from mygame.experience import testGenerator
+from mygame.experience import  craete_x_and_0_data
 
 playUntil = 0
 nextFlag = True
@@ -104,13 +104,14 @@ def possibleStep():
             boardCopy[i] = let
             if checkIfWon(boardCopy, let):
                 move = i
-                print("moves...to..taken..",move)
+                print("moves...to..be..taken..",move)
                 return move
 
 
 def validate_move():
     possibleMoves = [x for x, letter in enumerate(board) if letter == ' ' and x != 0]
     move = 0
+    print("possibale move ..",possibleMoves)
 
     for let in ['O', 'X']:
         for i in possibleMoves:
@@ -163,7 +164,7 @@ def checkIsBoardNotEmpty(board):
 def main():
     print('Welcome to Tic Tac Toe!')
     from mygame.Player import displayBoard
-    displayBoard(board)
+    #displayBoard(board)
     global x_win
     global o_win
     global draw_match
@@ -173,26 +174,26 @@ def main():
     shuffle(randlist)  # Randomize the slot list
     state = initState  # Reset board state
 
+    index = 0
+    toggle = 1
+    seq = []
     while not (checkIsBoardNotEmpty(board)):
-        if not (checkIfWon(board, 'O')):
-            playerMove()
-            displayBoard(board)
-        else:
-            o_win =+ 1
-            print('Sorry, O\'s won this time!')
-            break
-
         if not (checkIfWon(board, 'X')):
-            #move = validate_move()
-            value = possibleStep()
-            print("values...",value)
-            #pos = playMove(state)
+            move = validate_move()
 
-            move = playMove(state)
+            #move = playMove(possibleMoves)
 
             print('Computer plays at', move)
+            index += 1
+            temp = list(state)
+            player = 'x' if toggle % 2 == 1 else 'o'  # Toggle between x & o
+            temp[move] = player  # marking an empty slot on the board
+            state = ''.join(temp)
+            print("sequence",state)
+            seq.append(state)
 
-            #print("winnwe",win)
+
+            # print("winnwe",win)
             if move == 0:
                 print('Tie Game!')
                 draw_match += 1
@@ -204,6 +205,21 @@ def main():
             x_win += 1
             print('X\'s won this time! Good Job!')
             break
+
+        if not (checkIfWon(board, 'O')):
+            playerMove()
+            displayBoard(board)
+        else:
+            o_win = + 1
+            print('Sorry, O\'s won this time!')
+            break
+
+
+
+
+
+
+
 
     if checkIsBoardNotEmpty(board):
         print('Tie Game!')
@@ -240,7 +256,7 @@ def selectoption():
         playUntil = gameshouldwork
         spam = 0
         #printwinningpercentage(int(playUntil))
-        trainingData = testGenerator()
+        trainingData = craete_x_and_0_data()
         print(trainingData)
         calculateweights(trainingData)
         printpercentage(trainingData)
@@ -254,6 +270,7 @@ def selectoption():
             print("===============================")
             main()
 
+
 def printpercentage(game):
     global x_win
     global o_win
@@ -263,6 +280,7 @@ def printpercentage(game):
     print('Win percentage = ', 10 * x_win / len(game))
     print('Loss percentage = ', 10 * o_win / len(game))
     print('Draw percentage = ', 100 * draw_match / len(game), '\n')
+
 
 selectoption()
 

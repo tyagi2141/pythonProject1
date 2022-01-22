@@ -37,7 +37,7 @@ def generateRandomStates(var):
 
 
 # Generate random states for Non teacher mode
-def testGenerator():
+def craete_x_and_0_data():
     for _ in range(20):
         generateRandomStates(1)  # Generate 20 games for x
     for _ in range(20):
