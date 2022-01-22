@@ -150,7 +150,6 @@ def selectRandom(li):
     import random
     ln = len(li)
     r = random.randrange(0, ln)
-    print("random ",li,r)
     return li[r]
 
 
@@ -213,13 +212,6 @@ def main():
             o_win = + 1
             print('Sorry, O\'s won this time!')
             break
-
-
-
-
-
-
-
 
     if checkIsBoardNotEmpty(board):
         print('Tie Game!')
