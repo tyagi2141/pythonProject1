@@ -1,0 +1,51 @@
+1234x6789 12o4x6789 x2o4x6789 x2o4x678o x2o4xx78o x2ooxx78o xxooxx78o xxooxx7oo xxooxxxoo
+x2o4xx78o x2ooxx78o x2ooxx7xo xoooxx7xo xoooxxxxo
+x2xx5ooxo xoxx5ooxo xoxxxooxo
+x23xxooxo xo3xxooxo xoxxxooxo
+1234x6789 1o34x6789 xo34x6789 xo34x678o xo3xx678o xo3xxo78o xo3xxox8o
+x23456789 x2345678o x23456x8o x23o56x8o x2xo56x8o xoxo56x8o xoxox6x8o
+12o456789 x2o456789 x2o45o789 x2o45o78x x2o4oo78x x2o4oox8x x2oooox8x
+o23456789 o2345x789 oo345x789 oo345x78x ooo45x78x
+x23456789 x23456o89 x2x456o89 xox456o89 xox4x6o89 xox4x6o8o xox4x6oxo xoxox6oxo xoxoxxoxo
+12345o789 1234xo789 12o4xo789 12o4xo78x o2o4xo78x oxo4xo78x oxo4xoo8x oxo4xooxx
+x23456789 xo3456789 xox456789 xoxo56789 xoxox6789 xoxox678o xoxox6x8o
+123456x89 123456x8o 1x3456x8o 1x34o6x8o xx34o6x8o xxo4o6x8o xxoxo6x8o
+1234o6789 x234o6789 x234o6o89 x2x4o6o89 xox4o6o89 xox4o6ox9 xoxoo6ox9 xoxoo6oxx xoxooooxx
+12345678o x2345678o x234o678o x2x4o678o xox4o678o xox4o678o xox4o6x8o xox4o6xoo
+1o3456789 1o3x56789 1o3x5o789 1o3x5o7x9 1oox5o7x9 xoox5o7x9 xoox5o7xo
+12345678x 123o5678x x23o5678x x23oo678x x23oox78x x2ooox78x x2oooxx8x x2oooxxox xxoooxxox
+123x56789 123x567o9 123xx67o9 123xx67oo 123xxx7oo
+12345x789 o2345x789 o234xx789 o23oxx789 o23oxxx89 o2ooxxx89 o2ooxxx8x ooooxxx8x
+123456o89 123456o8x 12o456o8x 12o4x6o8x o2o4x6o8x oxo4x6o8x oxoox6o8x
+12345x789 12345x78o 123x5x78o 123xox78o x23xox78o x23xoxo8o x2xxoxo8o x2xxoxooo
+12345678x 123456o8x x23456o8x x2o456o8x x2o4x6o8x
+123456o89 123456o8x 12o456o8x 12o4x6o8x o2o4x6o8x o2oxx6o8x oooxx6o8x
+1234x6789 1234x67o9 12x4x67o9 12x4x6oo9 12x4x6oox 12x4xooox x2x4xooox
+12x456789 o2x456789 o2x456x89 o2x4o6x89 o2x4o6x8x o2x4o6xox o2x4oxxox
+1xx4oxo89 1xx4oxo8o xxx4oxo8o
+1xx4oxo89 oxx4oxo89 oxx4oxo8x
+x2o4o6x8x x2ooo6x8x x2ooo6xxx
+12xxo6o8o 12xxo6oxo o2xxo6oxo
+x23456789 xo3456789 xox456789 xox4o6789 xoxxo6789 xoxxo67o9
+o23456789 o234x6789 o234x678o o234x6x8o o2o4x6x8o o2o4xxx8o ooo4xxx8o
+x23456789 x234o6789 x234o678x x234o6o8x x2x4o6o8x xox4o6o8x xox4oxo8x
+12x456789 12x4o6789 12x4o6x89 12x4o6x8o x2x4o6x8o x2xoo6x8o xxxoo6x8o
+123456x89 1234o6x89 12x4o6x89 12x4o6x8o x2x4o6x8o xoxoo6x8o xoxxo6x8o
+12345678x 1234o678x x234o678x x234o6o8x x2x4o6o8x x2x4ooo8x xxx4ooo8x
+12x456789 o2x456789 o2x456x89 o2x4o6x89 o2x4o6x8x o2x4o6xox o2x4oxxox
+12o456789 x2o456789 x2o456o89 x2o4x6o89 x2o4x6o8o x2o4x6oxo x2o4xooxo
+o23456789 o234x6789 o234x678o o234x6x8o o2o4x6x8o o2o4xxx8o ooo4xxx8o
+12o456789 12o4x6789 12o4x6o89 12o4x6o8x o2o4x6o8x o2oxx6o8x oooxx6o8x
+123456o89 1234x6o89 12o4x6o89 12o4x6o8x o2o4x6o8x oxo4x6o8x oxoox6o8x
+12345678o 1234x678o o234x678o o234x6x8o o2o4x6x8o o2o4xxx8o ooo4xxx8o
+x23456789 x234o6789 x234o678x x23oo678x x23oox78x x2ooox78x x2oooxx8x x2oooxxox xxoooxxox
+12x456789 12x4o6789 12x4o6x89 12xoo6x89 12xooxx89 12xooxx8o x2xooxx8o xoxooxx8o xoxooxxxo
+123456x89 1234o6x89 12x4o6x89 12x4oox89 12xxoox89 o2xxoox89 o2xxoox8x o2xxooxox oxxxooxox
+12345678x 1234o678x x234o678x x23oo678x x23oox78x x2ooox78x x2oooxx8x x2oooxxox xxoooxxoo
+o23456789 o234x6789 o234x678o o234xx78o o23oxx78o o23oxxx8o o2ooxxx8o oxooxxx8o oxooxxxoo
+12o456789 12o4x6789 12o4x6o89 12oxx6o89 12oxxoo89 12oxxoo8x o2oxxoo8x oxoxxoo8x oxoxxooox
+123456o89 1234x6o89 12o4x6o89 12o4xxo89 12ooxxo89 x2ooxxo89 x2ooxxo8o x2ooxxoxo xoooxxoxo
+12345678o 1234x678o o234x678o o23xx678o o23xxo78o o2xxxo78o o2xxxoo8o o2xxxooxo ooxxxooxo
+1234x6789 1234x6o89 x234x6o89 x234x6o8o x234x6oxo xo34x6oxo xo3xx6oxo xo3xxooxo xoxxxooxo
+1234o6789 1234o6x89 o234o6x89 o234o6x8x o234o6xox ox34o6xox ox3oo6xox ox3ooxxox oxoooxxox
+12o4oox8x 12o4ooxxx
