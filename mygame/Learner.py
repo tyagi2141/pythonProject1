@@ -1,4 +1,3 @@
-# Tic Tac Toe game in python
 from random import shuffle
 import numpy as np
 
