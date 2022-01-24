@@ -23,13 +23,13 @@ board = [' ' for x in range(10)]
 def playerMove():
     run = True
     while run:
-        move = input('Please select a position to place an \'X\' (1-9): ')
+        move = input('Please select a position to place an \'O\' (1-9): ')
         try:
             move = int(move)
             if move > 0 and move < 10:
                 if checkIfBlank(move):
                     run = False
-                    inputWithPosition('X', move)
+                    inputWithPosition('O', move)
                 else:
                     print('Sorry, this space is occupied!')
             else:
@@ -98,7 +98,7 @@ def calculateweights(game):
 
 def possibleStep():
     possibleMoves = [x for x, letter in enumerate(board) if letter == ' ' and x != 0]
-    for let in ['O', 'X']:
+    for let in ['X', 'O']:
         for i in possibleMoves:
             boardCopy = board[:]
             boardCopy[i] = let
@@ -113,7 +113,7 @@ def validate_move():
     move = 0
     print("possibale move ..",possibleMoves)
 
-    for let in ['O', 'X']:
+    for let in ['X', 'O']:
         for i in possibleMoves:
             boardCopy = board[:]
             boardCopy[i] = let
@@ -177,16 +177,16 @@ def main():
     toggle = 1
     seq = []
     while not (checkIsBoardNotEmpty(board)):
-        if not (checkIfWon(board, 'X')):
+        if not (checkIfWon(board, 'O')):
             move = validate_move()
 
-            #move = playMove(possibleMoves)
+            #move = playMove(state)
 
             print('Computer plays at', move)
             index += 1
             temp = list(state)
-            player = 'x' if toggle % 2 == 1 else 'o'  # Toggle between x & o
-            temp[move] = player  # marking an empty slot on the board
+            player = 'O' if toggle % 2 == 1 else 'X'  # Toggle between x & o
+            temp[move-1] = player  # marking an empty slot on the board
             state = ''.join(temp)
             print("sequence",state)
             seq.append(state)
@@ -197,20 +197,20 @@ def main():
                 print('Tie Game!')
                 draw_match += 1
             else:
-                inputWithPosition('O', move)
-                print('Computer placed an \'O\' in position', move, ':')
+                inputWithPosition('X', move)
+                print('Computer placed an \'X\' in position', move, ':')
                 displayBoard(board)
         else:
             x_win += 1
             print('X\'s won this time! Good Job!')
             break
 
-        if not (checkIfWon(board, 'O')):
+        if not (checkIfWon(board, 'X')):
             playerMove()
             displayBoard(board)
         else:
             o_win = + 1
-            print('Sorry, O\'s won this time!')
+            print('Sorry, X\'s won this time!')
             break
 
     if checkIsBoardNotEmpty(board):
@@ -275,4 +275,3 @@ def printpercentage(game):
 
 
 selectoption()
-
