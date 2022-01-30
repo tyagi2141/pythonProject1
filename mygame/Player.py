@@ -22,7 +22,7 @@ def playMove(state):
         for i in range(9):
             if ord(state[i]) >= 49 and ord(state[i]) <= 57:
                 temp = list(state)
-                temp[i] = 'x'
+                temp[i] = 'X'
                 temp = ''.join(temp)
                 v = vCap(temp)
                 if maxValue < v:
@@ -39,7 +39,6 @@ def playMove(state):
 
 def vCap(boardstate):
     feature[0] = 1
-
     feature[1], feature[2] = feature12(boardstate)  # Feature 1 is # of 'x' & Feature 2 to is # of 'o'
     feature[3], feature[4] = feature34(boardstate)  # Feature 3 is # of two 'x' per row & Feature 4 to is # of two 'o' per row
     feature[5], feature[6] = feature56(boardstate)  # Feature 5 is # of three 'x' & Feature 6 to is # of three 'o' per row

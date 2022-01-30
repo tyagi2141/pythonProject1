@@ -24,7 +24,7 @@ def generateRandomStates(var):
         # print("state ",state)
 
         temp = list(state)
-        player = 'x' if toggle % 2 == 0 else 'o'  # Toggle between x & o
+        player = 'X' if toggle % 2 == 0 else 'O'  # Toggle between x & o
         temp[pos - 1] = player  # marking an empty slot on the board
         state = ''.join(temp)
         seq.append(state)

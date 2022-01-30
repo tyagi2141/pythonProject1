@@ -26,7 +26,7 @@ def playerMove():
         move = input('Please select a position to place an \'O\' (1-9): ')
         try:
             move = int(move)
-            if move > 0 and move < 10:
+            if move >= 0 and move < 10:
                 if checkIfBlank(move):
                     run = False
                     inputWithPosition('O', move)
@@ -177,16 +177,15 @@ def main():
     toggle = 1
     seq = []
     while not (checkIsBoardNotEmpty(board)):
-        if not (checkIfWon(board, 'O')):
-            move = validate_move()
-
-            #move = playMove(state)
+        if not (checkIfWon(board,'O')):
+            #move = validate_move()
+            move = playMove(state)
 
             print('Computer plays at', move)
             index += 1
             temp = list(state)
             player = 'O' if toggle % 2 == 1 else 'X'  # Toggle between x & o
-            temp[move-1] = player  # marking an empty slot on the board
+            temp[move] = player  # marking an empty slot on the board
             state = ''.join(temp)
             print("sequence",state)
             seq.append(state)

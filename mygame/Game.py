@@ -1,4 +1,4 @@
-# Feature evaluation for blocking two 'x's or two 'o's
+# Feature evaluation for blocking two 'X's or two 'O's
 import numpy as np
 
 
@@ -8,53 +8,52 @@ def feature12(st):
     x = 0
     o = 0
     for f in winComb:
-        # Feature 1 is one 'x' in the same row as two 'o'
-        if (st[f[0] - 1] == 'o' and st[f[1] - 1] == 'o' and st[f[2] - 1] == 'x') or (
-                st[f[0] - 1] == 'x' and st[f[1] - 1] == 'o' and st[f[2] - 1] == 'o') or (
-                st[f[0] - 1] == 'o' and st[f[2] - 1] == 'x' and st[
-            f[2] - 1] == 'o'):  # comparing combination of the boardstate with winning combination array
+        # Feature 1 is one 'X' in the same row as two 'O'
+        if (st[f[0] - 1] == 'O' and st[f[1] - 1] == 'O' and st[f[2] - 1] == 'X') or (
+            st[f[0] - 1] == 'X' and st[f[1] - 1] == 'O' and st[f[2] - 1] == 'O') or (
+            st[f[0] - 1] == 'O' and st[f[2] - 1] == 'X' and st[
+            f[2] - 1] == 'O'):  # comparing combination of the boardstate with winning combination array
             x += 2
 
-            # Feature 2 is one 'o' in the same row as two 'x'
-        if (st[f[0] - 1] == 'x' and st[f[1] - 1] == 'x' and st[f[2] - 1] == 'o') or (
-                st[f[0] - 1] == 'o' and st[f[1] - 1] == 'x' and st[f[2] - 1] == 'x') or (
-                st[f[0] - 1] == 'x' and st[f[1] - 1] == 'o' and st[
-            f[2] - 1] == 'x'):  # comparing combination of the boardstate with winning combination array
+            # Feature 2 is one 'O' in the same row as two 'X'
+        if (st[f[0] - 1] == 'X' and st[f[1] - 1] == 'X' and st[f[2] - 1] == 'O') or (
+                st[f[0] - 1] == 'O' and st[f[1] - 1] == 'X' and st[f[2] - 1] == 'X') or (
+                st[f[0] - 1] == 'X' and st[f[1] - 1] == 'O' and st[
+            f[2] - 1] == 'X'):  # comparing combination of the boardstate with winning combination array
             o += 2
     return x, o
 
-    # Feature evaluation for two 'x' & 'o' per row
+    # Feature evaluation for two 'X' & 'O' per row
 
 
 def feature34(st):
     x = 0
     o = 0
     for f in winComb:
-        if (st[f[0] - 1] == 'x' and st[f[1] - 1] == 'x') or (st[f[1] - 1] == 'x' and st[f[2] - 1] == 'x') or (
-                st[f[0] - 1] == 'x' and st[
-            f[2] - 1] == 'x'):  # comparing combination of the boardstate with winning combination array
+        if (st[f[0] - 1] == 'X' and st[f[1] - 1] == 'X') or (st[f[1] - 1] == 'X' and st[f[2] - 1] == 'X') or (
+                st[f[0] - 1] == 'X' and st[
+            f[2] - 1] == 'X'):  # comparing combination of the boardstate with winning combination array
             x += 0.2
 
-        if (st[f[0] - 1] == 'o' and st[f[1] - 1] == 'o') or (st[f[1] - 1] == 'o' and st[f[2] - 1] == 'o') or (
-                st[f[0] - 1] == 'o' and st[
-            f[2] - 1] == 'o'):  # comparing combination of the boardstate with winning combination array
+        if (st[f[0] - 1] == 'O' and st[f[1] - 1] == 'O') or (st[f[1] - 1] == 'O' and st[f[2] - 1] == 'O') or \
+                (st[f[0] - 1] == 'O' and st[ f[2] - 1] == 'O'):  # comparing combination of the boardstate with winning combination array
             o += 0.2;
-    return x, o  # returns number of two 'x' & 'o' per row
+    return x, o  # returns number of two 'X' & 'O' per row
 
 
-# Feature evaluation for three 'x' & 'o' per row
+# Feature evaluation for three 'X' & 'O' per row
 def feature56(st):
     x = 0
     o = 0
     for f in winComb:
-        if st[f[0] - 1] == 'x' and st[f[1] - 1] == 'x' and st[
-            f[2] - 1] == 'x':  # comparing combination of the boardstate with winning combination array
+        if st[f[0] - 1] == 'X' and st[f[1] - 1] == 'X' and st[
+            f[2] - 1] == 'X':  # comparing combination of the boardstate with winning combination array
             x += 10
 
-        if st[f[0] - 1] == 'o' and st[f[1] - 1] == 'o' and st[
-            f[2] - 1] == 'o':  # comparing combination of the boardstate with winning combination array
+        if st[f[0] - 1] == 'O' and st[f[1] - 1] == 'O' and st[
+            f[2] - 1] == 'O':  # comparing combination of the boardstate with winning combination array
             o += 10;
-    return x, o  # returns number of three 'x' & 'o' per row
+    return x, o  # returns number of three 'X' & 'O' per row
 
 def checkWin(index, state):
         x, o = feature56(state)
