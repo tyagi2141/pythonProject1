@@ -22,7 +22,7 @@ def playMove(state):
         for i in range(9):
             if ord(state[i]) >= 49 and ord(state[i]) <= 57:
                 temp = list(state)
-                temp[i] = 'x'
+                temp[i] = 'X'
                 temp = ''.join(temp)
                 v = vCap(temp)
                 if maxValue < v:
